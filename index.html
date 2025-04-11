@@ -4,136 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Assets/style.css">
-    <title>Hogwarts</title>
+    <title>Site Hogwarts</title>
+    <link rel="stylesheet" href="/Assets/style.css">
 </head>
 
 <body>
-    <!-- Overlay da carta de Hogwarts (animação inicial) -->
     <div class="carta-overlay" id="cartaOverlay">
-        <img src="./Assets/Imagens/Hogwarts-Logo.png" class="teste" alt="Logo da Escola">
+        <img src="./Assets/Gifs/carta-hogwarts.gif" alt="Carta sendo enviada" class="carta-gif">
     </div>
 
-    <!-- Cabeçalho da Página com a logo e menu de navegação -->
     <header class="cabecalho">
         <a href="#inicio" class="logo-link">
-            <img class="imagem-cabecalho" src="./Assets/Imagens/Hogwarts-Logo.png" alt="Logo da Escola">
+            <img class="imagem-cabecalho" src="./Assets/Imagens/Hogwarts-Logo.png" alt="Logo da escola">
         </a>
-        <!-- Menu de navegação principal -->
-        <nav>
-            <ul>
-                <li class="cabecalho-lista">
-                    <a href="https://docs.google.com/forms/d/1Syw_lUwaarQMiopMQH7m3EpYswNHeEqEA19GqROF97M/edit"> Escola
-                    </a>
-                </li>
-                <li class="cabecalho-lista">
-                    <a href="#casas"> Casas </a>
-                </li>
-                <li class="cabecalho-lista">
-                    <a href="#estudantes"> Estudantes </a>
-                </li>
-            </ul>
-        </nav>
+        <ul class="cabecalho-itens">
+            <li class="cabecalho-lista"><a href="https://docs.google.com/forms/d/1Syw_lUwaarQMiopMQH7m3EpYswNHeEqEA19GqROF97M/edit">Escola</a></li>
+            <li class="cabecalho-lista"><a href="#casas">Casas</a></li>
+            <li class="cabecalho-lista"><a href="#estudantes">Estudantes</a></li>
+        </ul>
     </header>
-    <!-- Seção sobre a escola de Hogwarts -->
+
     <section class="escola" id="inicio">
         <div class="escola-div-conteudo">
-            <h2 class="titulo-escola"> Escola de Hogwarts de Magia</h2>
-            <p class="texto-um-escola">
-                A Escola Hogwarts de Magia foi criada no ano de 1876. Seu propósito é além de trazer encantamento ao
-                mundo através da arte da Magia, também ensinar aos seus estudantes valores morais.
+            <h2 class="titulo-escola">Escola Hogwarts de Magia</h2>
+            <p class="texto-um-escola">A Escola Hogwarts de Magia foi criada no ano de 1876. Seu propósito é além
+                de trazer encantamento ao mundo através da arte da Magia, também ensinar aos seus estudantes valores
+                morais.
             </p>
-            <p class="texto-dois-escola">
-                Ela está dividida em quatro casas: Lufa-Lufa, Sonserina, Grifinória e Corvinal. Seus membros são
-                escolhidos conforme seu perfil de acordo com as considerações do chapéu seletor.
+            <p class="texto-dois-escola">Ela está dividida em quatro casas: Lufa-Lufa, Sonserina, Grifinória e
+                Corvinal. Seus membros são escolhidos conforme seu perfil de acordo com as considerações do chapéu
+                seletor.
             </p>
         </div>
     </section>
 
-    <!-- Seção sobre as casas de Hogwarts -->
     <section class="casas" id="casas">
-        <h2 class="casas-titulo"> As Casas de Hogwarts</h2>
+        <h2 class="casas-titulo">As Casas de Hogwarts</h2>
         <div class="casas-container">
-            <!-- Card da Grifinória -->
-            <div class="casa-card" id="Grifinória">
-                <img src="./Assets/Imagens/logo-grifinoria.png" alt="Imagem da Casa Grifinória" class="casa-imagem">
+            <div class="casa-card" id="grifinoria">
+                <img src="./Assets/Imagens/logo-grifinoria.png" alt="Grifinória" class="casa-imagem">
                 <h3>Grifinória</h3>
-                <p>Valoriza a coragem, ousadia e determinação.</p>
+                <p>Valoriza coragem, ousadia e determinação. Seus membros são conhecidos por seu espírito aventureiro.
+                </p>
             </div>
-            <!-- Card da Sonserina -->
-            <div class="casa-card" id="Sonserina">
-                <img src="./Assets/Imagens/logo_sonserina.png" alt="Imagem da Casa Sonserina" class="casa-imagem">
+            <div class="casa-card" id="sonserina">
+                <img src="./Assets/Imagens/logo_sonserina.png" alt="Sonserina" class="casa-imagem">
                 <h3>Sonserina</h3>
-                <p>Destaca a ambição, astúcia e liderança.</p>
+                <p>Destaca ambição, astúcia e liderança. Sonserinos são conhecidos por sua determinação em alcançar seus
+                    objetivos.</p>
             </div>
-            <!-- Card da Corvinal -->
-            <div class="casa-card" id="Corvinal">
-                <img src="./Assets/Imagens/logo-corvinal.png" alt="Imagem da Casa Corvinal" class="casa-imagem">
+            <div class="casa-card" id="corvinal">
+                <img src="./Assets/Imagens/logo-corvinal.png" alt="Corvinal" class="casa-imagem">
                 <h3>Corvinal</h3>
-                <p>Valoriza inteligência, criatividade e aprendizado.</p>
+                <p>Valoriza inteligência, criatividade e aprendizado. Seus membros são curiosos e sempre em busca de
+                    conhecimento.</p>
             </div>
-            <!-- Card da Lufa-lufa -->
             <div class="casa-card" id="lufalufa">
-                <img src="./Assets/Imagens/logo-lufa-lufa.png" alt="Imagem da Casa Lufa-lufa" class="casa-imagem">
-                <h3>Lufa-lufa</h3>
-                <p>Destaca lealdade, paciência e honestidade.</p>
+                <img src="./Assets/Imagens/logo-lufa-lufa.png" alt="Lufa-Lufa" class="casa-imagem">
+                <h3>Lufa-Lufa</h3>
+                <p>Destaca lealdade, paciência e honestidade. Seus membros são conhecidos por seu caráter justo e
+                    trabalho duro.</p>
             </div>
         </div>
     </section>
-    <!-- Seção sobre os estudantes de Hogwarts -->
+
     <section class="estudantes" id="estudantes">
-        <h2 class="estudante-titulo"> Quem são os estudantes de Hogwarts</h2>
+        <h2 class="estudante-título">Quem são os estudantes de Hogwarts?</h2>
         <div class="estudantes-todos">
-            <!-- Container do Harry Potter -->
             <div class="estudante-container">
                 <img class="imagem-estudante" src="./Assets/Imagens/harry_potter_alterado_oficial.png"
                     alt="Harry Potter" data-gif="gif_harry.gif">
-                <h3 class="estudante-nome"> Harry Potter </h3>
+                <h3 class="estudante-nome">Harry Potter</h3>
                 <img class="estudante-casa" src="./Assets/Imagens/logo-grifinoria.png" alt="Grifinória">
                 <div class="gif-card">
-                    <img class="gif-imagem" src="./Assets/Gifs/gif_harry.gif" alt="Gif do Harry Potter">
+                    <img src="./Assets/Gifs/gif_harry.gif" alt="GIF do Harry Potter" class="gif-imagem">
                 </div>
             </div>
-            <!-- Container do Draco Malfoy -->
+            <div class="estudante-container">
+                <img class="imagem-estudante" src="./Assets/Imagens/hermione-granger.png" alt="Hermione Granger"
+                    data-gif="gif_hermione.gif">
+                <h3 class="estudante-nome">Hermione Granger</h3>
+                <img class="estudante-casa" src="./Assets/Imagens/logo-grifinoria.png" alt="Grifinória">
+                <div class="gif-card">
+                    <img src="./Assets/Gifs/gif_hermione.gif" alt="GIF da Hermione Granger" class="gif-imagem">
+                </div>
+            </div>
             <div class="estudante-container">
                 <img class="imagem-estudante" src="./Assets/Imagens/draco-malfoy_alterado.png" alt="Draco Malfoy"
                     data-gif="gif_draco.gif">
-                <h3 class="estudante-nome"> Draco Malfoy </h3>
+                <h3 class="estudante-nome">Draco Malfoy</h3>
                 <img class="estudante-casa" src="./Assets/Imagens/logo_sonserina.png" alt="Sonserina">
                 <div class="gif-card">
-                    <img class="gif-imagem" src="./Assets/Gifs/gif_draco.gif" alt="Gif do Draco">
+                    <img src="./Assets/Gifs/gif_draco.gif" alt="GIF do Draco Malfoy" class="gif-imagem">
                 </div>
             </div>
-            <!-- Container do Cedrico Diggory -->
-            <div class="estudante-container">
-                <img class="imagem-estudante" src="./Assets/Imagens/cedric_diggory_novo_6.png" alt="Cedrico Diggory"
-                    data-gif="gif_cedric.gif">
-                <h3 class="estudante-nome"> Cedrico Diggori </h3>
-                <img class="estudante-casa" src="./Assets/Imagens/logo-lufa-lufa.png" alt="Lufa-lufa">
-                <div class="gif-card">
-                    <img class="gif-imagem" src="./Assets/Gifs/gif_cedric.gif" alt="Gif do Cedric">
-                </div>
-            </div>
-            <!-- Container da Luna Lovegood -->
             <div class="estudante-container">
                 <img class="imagem-estudante" src="./Assets/Imagens/foto_luna_alterada.png" alt="Luna Lovegood"
                     data-gif="gif_luna.gif">
-                <h3 class="estudante-nome"> Luna Lovegood </h3>
+                <h3 class="estudante-nome">Luna Lovegood</h3>
                 <img class="estudante-casa" src="./Assets/Imagens/logo-corvinal.png" alt="Corvinal">
                 <div class="gif-card">
-                    <img class="gif-imagem" src="./Assets/Gifs/gif_luna.gif" alt="Gif da Luna">
+                    <img src="./Assets/Gifs/gif_luna.gif" alt="GIF da Luna Lovegood" class="gif-imagem">
+                </div>
+            </div>
+            <div class="estudante-container">
+                <img class="imagem-estudante" src="./Assets/Imagens/cedric_diggory_novo_6.png" alt="Cedrico Diggory"
+                    data-gif="gif_cedric.gif">
+                <h3 class="estudante-nome">Cedrico Diggory</h3>
+                <img class="estudante-casa" src="./Assets/Imagens/logo-lufa-lufa.png" alt="Lufa-Lufa">
+                <div class="gif-card">
+                    <img src="./Assets/Gifs/gif_cedric.gif" alt="GIF do Cedrico Diggory" class="gif-imagem">
+                </div>
+            </div>
+            <div class="estudante-container">
+                <img class="imagem-estudante" src="./Assets/Imagens/ginny_weasley_2.png" alt="Gina Weasley"
+                    data-gif="gif_ginny.gif">
+                <h3 class="estudante-nome">Gina Weasley</h3>
+                <img class="estudante-casa" src="./Assets/Imagens/logo-grifinoria.png" alt="Grifinória">
+                <div class="gif-card">
+                    <img src="./Assets/Gifs/gif_ginny.gif" alt="GIF da Gina Weasley" class="gif-imagem">
                 </div>
             </div>
         </div>
     </section>
-    <!-- Rodapé da Página -->
+
     <footer class="rodape">
-        <img class="imagem-rodape" src="./Assets/Imagens/alura_logo.png" alt="Logo da Alura">
+        <img class="imagem-rodape" src="./Assets/Imagens/alura_logo.png" alt="logo Alura">
         <div>
-            <img src="./Assets/Imagens/whatsapp (2).png" alt="whatsapp">
-            <p class="rodape-texto"> Fale Conosco (11) 97766-0111 </p>
+            <img src="./Assets/Imagens/whatsapp (2).png" alt="Logo WhatsApp">
+            <p class="rodape-texto"> Fale conosco: (11) 97766-0111</p>
         </div>
     </footer>
-<script src="./Assets/script.js"></script>
+    <script src="./Assets/script.js"></script>
 </body>
 </html>

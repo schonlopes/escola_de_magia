@@ -13,28 +13,28 @@ document.addEventListener('DOMContentLoaded', function () {
             gifImagem.src = `./Assets/Gifs/${gifSrc}`;
             gifCard.style.display = 'flex';
         });
-
+        /* Quando o mouse sai da imagem do estudante */
         imagem.addEventListener('mouseleave', () => {
             gifCard.style.display = 'none';
         });
     });
 
-    // Verifica se veio de redirecionamento do Forms
+    /* Verifica se veio de redirecionamento do Forms */
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has('fromForms')) {
-        showLetterAnimation();
+        showLetterAnimation(); /* Mostrar animação da carta */
     }
 });
 
 function showLetterAnimation() {
     const overlay = document.getElementById('cartaOverlay');
-    overlay.style.display = 'flex';
+    overlay.style.display = 'flex'; /* Mostrar o overlay */
 
-    // Remove após 3 segundos
+    /* Configurar um timeout para esconder o overlay após 3 segundos */
     setTimeout(() => {
         overlay.style.display = 'none';
 
-        // Remove o parâmetro da URL sem recarregar
+        /* Remove o parâmetro da URL sem recarregar */
         history.replaceState(null, null, window.location.pathname);
     }, 3000);
 }
